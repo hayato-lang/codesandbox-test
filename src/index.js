@@ -50,13 +50,40 @@
  * テンプレート文字列
  */
 
-const name = "勇人";
-const age = "26";
-//  私の名前は勇人です。年齢は26歳です。
-// 従来のやり方
-const message1 = "私の名前は" + name + "です。年齢は" + age + "歳です。";
-console.log(message1);
+// const name = "勇人";
+// const age = "26";
+// //  私の名前は勇人です。年齢は26歳です。
+// // 従来のやり方
+// const message1 = "私の名前は" + name + "です。年齢は" + age + "歳です。";
+// console.log(message1);
 
-// テンプレート文字列
-const message2 = `私の名前は${name}です。年齢は${age}歳です。`;
-console.log(message2);
+// // テンプレート文字列
+// const message2 = `私の名前は${name}です。年齢は${age}歳です。`;
+// console.log(message2);
+
+/*
+アロー関数
+*/
+// 従来の関数
+// function func1($str){
+//   return $str
+// }
+
+const func1 = function ($str) {
+  return $str;
+};
+
+console.log(func1("func1です"));
+
+// アロー関数
+const func2 = (str) => {
+  return str;
+};
+
+console.log(func2("func2です"));
+
+const func3 = (num1, num2) => {
+  return num1 + num2;
+};
+
+console.log(func3(1, 2));
