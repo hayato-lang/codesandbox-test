@@ -139,17 +139,49 @@
 // console.log(num1);
 // console.log(arr3);
 
-// 配列のコピー、結合
-const arr4 = [10, 20];
-const arr5 = [30, 40];
+// // 配列のコピー、結合
+// const arr4 = [10, 20];
+// const arr5 = [30, 40];
 
-const arr6 = [...arr4];
-arr6[0] = 100;
-console.log(arr6);
-console.log(arr4);
-// const arr7 = [...arr4, ...arr5];
+// const arr6 = [...arr4];
+// arr6[0] = 100;
+// console.log(arr6);
+// console.log(arr4);
+// // const arr7 = [...arr4, ...arr5];
 // console.log(arr7);
 
 // const arr8 = arr4;
 // arr8[0] = 100;
 // console.log(arr4);
+
+/**
+ * mapやfilterを使った配列の処理
+ */
+
+// const kyoto = ["高橋", "森瀬", "新見"];
+// for (let index = 0; index < kyoto.length; index++){
+//   console.log(`${index+1}番目は${kyoto[index]}です。`);
+// }
+
+// const kyoto2 = kyoto.map((name)=>{
+//   return name;
+// })
+// console.log(kyoto2);
+
+// kyoto.map((name, index) => console.log(`${index+1}番目は${name}です。`));
+
+// const numArr = [1,2,3,4,5];
+// const newNum = numArr.filter((num)=>{
+//   return num % 2 === 1;
+// })
+// console.log(newNum);
+
+// const newKyoto = kyoto.map((name)=>{
+//   if (name === '高橋') {
+//     return name
+//   } else {
+//     return `${name}さん`;
+//   }
+// })
+
+// console.log(newKyoto);
