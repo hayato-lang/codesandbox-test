@@ -204,3 +204,28 @@
 // }
 
 // console.log(checkSum(100, 20));
+
+/**
+ * 論理演算子の本当の意味を知ろう！　&& ||
+ */
+
+//  const flag1 = true;
+//  const flag2 = false;
+
+//  if (flag1 || flag2) {
+//    console.log('1か2は正解です');
+//  }
+
+//  if (flag1 && flag2) {
+//   console.log('1と2が正解です');
+// }
+
+// ||は左側がfalseだった場合に右側を返す
+// const num = null;
+// const fee = num || '金額未設定です';
+// console.log(fee);
+
+// // &&は左側がtrueなら右側を返す
+// const num2 = 100;
+// const fee = num2 && '何か設定されました';
+// console.log(fee);
